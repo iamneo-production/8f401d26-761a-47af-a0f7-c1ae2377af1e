@@ -45,7 +45,7 @@ function Html() {
           color: "white"
         }}
       >
-        Profit_Taking
+        Profit Taking
       </h1>
       <h1 id="ii"
         style={{
@@ -53,13 +53,16 @@ function Html() {
           top: "450vh",
           left: "75vw",
           transform: "translateX(-50%)",
-          color: "navy"
+          color: "yellow"
         }}
       >
         Panic
       </h1>
+      <div className="btndivv">
+        <a href="/about" className="btn">About</a>
+      </div>
       <div className="btndiv">
-        <a href="/home" className="btn">Click_Me</a>
+        <a href="/home" className="btn">Forecast</a>
       </div>
       <h3 className="stage">5 STAGES OF ASSET BUBBLE</h3>
       

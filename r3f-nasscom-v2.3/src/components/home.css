@@ -2,7 +2,9 @@
     margin-top: 40px;
     flex: 4;
 }
-
+html{
+    background-color: black;
+}
 .featured{
     width: 100%;
     display: flex;
@@ -11,7 +13,6 @@
 }
 
 .featureditems{
-    background-color: navy;
     flex: 1;
     margin: 0px 20px;
     padding: 30px;
@@ -45,7 +46,7 @@
 }
 
 .chart{
-    margin: 20px;
+    margin: 100px;
     padding: 20px;
     -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
@@ -53,4 +54,15 @@
 
 .charttitle{
     margin-bottom: 20px;
+    color: white;
+}
+
+.card1{
+    background-color: #c37cff;
+}
+.card2{
+    background-color: #ff9c9f;
+}
+.card3{
+    background-color: #ffc96d;
 }

@@ -8,7 +8,7 @@ html{
 .container{
     height: 100;
     width: 100;
-    background-color: rgb(3, 124, 216);
+    background-color: black;
     padding:8px 8px;
 }
 
@@ -41,17 +41,17 @@ html{
     margin: 2%;
    }
    p{
-    font-family: "Times New Roman", Times, serif;
+    font-family: sans-serif;
    }
    .card{
         padding-bottom: 20px;
-        width: 250PX;
+        width: 275PX;
         display: inline-block;
         box-shadow: 2px 2px 20px rgb(10, 10, 10);
         border-radius: 5px; 
         margin: 1%;
         background-color: rgb(45, 44, 44);
-        height:375px;
+        height:400px;
        }
    
    .card .image img{
@@ -82,17 +82,11 @@ html{
     padding-left: 20px;
      text-align: left;
      padding-top: 10px;
-           border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
      border-bottom-left-radius: 5px;
      color: white;
+     font-family: sans-serif;
 
-   }
-   
-   button:hover{
-     background-color: black;
-     color: white;
-     transition: .5s;
-     cursor: pointer;
    }
 h2{
     text-decoration:underline;

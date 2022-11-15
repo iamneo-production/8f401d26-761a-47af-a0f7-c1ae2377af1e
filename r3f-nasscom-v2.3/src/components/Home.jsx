@@ -8,9 +8,13 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsi
 
 const API = () => {
   useEffect(() => {
-    axios.get("http://127.0.0.1:8000/")
+    axios.get("https://dbqzo7x9t9.execute-api.us-east-1.amazonaws.com/default/model",{
+      header:{
+        'Access-Control-Allow-Origin': '*',
+      }
+    })
     .then((res) => {
-      console.log(res.data);
+      console.log(res);
     });
   }, []);
 }
@@ -18,21 +22,21 @@ const API = () => {
 const Featured = () => {
     return(
         <div className="featured">
-            <div className="featureditems">
+            <div className="featureditems card1">
                 <span className="featuredtitle">1 Month</span>
                 <div className="featuredprob">
                     <span className="prob">27%</span>
                 </div>
                 <span className="featuredsub">1 month time period</span>
             </div>
-            <div className="featureditems">
+            <div className="featureditems card2">
                 <span className="featuredtitle">3 Month</span>
                 <div className="featuredprob">
                     <span className="prob">30%</span>
                 </div>
                 <span className="featuredsub">3 month time period</span>
             </div>
-            <div className="featureditems">
+            <div className="featureditems card3">
                 <span className="featuredtitle">6 Month</span>
                 <div className="featuredprob">
                     <span className="prob">38%</span>
@@ -46,20 +50,20 @@ const Featured = () => {
 const Chart = () => {
     const data = [
         {
-          name: 'Page A',
+          name: '1 Month',
           "Active User": 27,
           pv: 2400,
           amt: 2400,
         },
         {
-          name: 'Page B',
+          name: '3 Month',
           "Active User": 30,
           pv: 1398,
           amt: 2210,
         },
         {
-          name: 'Page C',
-          "Active User": 32,
+          name: '9 Month',
+          "Active User": 38,
           pv: 9800,
           amt: 2290,
         }
@@ -71,8 +75,9 @@ const Chart = () => {
             </h3> 
             <ResponsiveContainer width="100%" aspect={4/1}>
                 <LineChart data={data}>
-                    <XAxis dataKey="name" stroke="#5550bd" />
-                    <Line type="monotone" dataKey="Active User" stroke="#5550bd" />
+                    <XAxis dataKey="name" stroke="#fff" />
+                    <YAxis type="number" domain={[25,40]} />
+                    <Line type="monotone" dataKey="Active User" stroke="#fff" />
                     <Tooltip />
                 </LineChart>
 
